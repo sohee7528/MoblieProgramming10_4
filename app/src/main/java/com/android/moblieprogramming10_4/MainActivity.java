@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     dlg.setView(dialogView);
                     dlg.setNegativeButton("닫기",null);
                     dlg.show();
-
+                    Toast.makeText(getApplicationContext(), posterTitle[i]+"이 선택되었습니다.",Toast.LENGTH_SHORT).show();
                 }
             });
             return imageView;
