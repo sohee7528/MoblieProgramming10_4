@@ -39,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.mov06,R.drawable.mov07,R.drawable.mov08,R.drawable.mov09,R.drawable.mov10,R.drawable.mov01,R.drawable.mov02,R.drawable.mov03,R.drawable.mov04,R.drawable.mov05,
                 R.drawable.mov06,R.drawable.mov07,R.drawable.mov08,R.drawable.mov09,R.drawable.mov10};
 
+
+        String[] posterTitle={"토이스토리4","호빗3","제이슨 본","반지의 제왕3","정직한 후보","나쁜 녀석들",
+        "겨울왕국2","알라딘","극한직업","스파이더맨","토이스토리4","호빗3","제이슨 본","반지의 제왕3","정직한 후보","나쁜 녀석들",
+                "겨울왕국2","알라딘","극한직업","스파이더맨","토이스토리4","호빗3","제이슨 본","반지의 제왕3","정직한 후보","나쁜 녀석들",
+                "겨울왕국2","알라딘","극한직업","스파이더맨","토이스토리4","호빗3","제이슨 본","반지의 제왕3","정직한 후보","나쁜 녀석들",
+                "겨울왕국2","알라딘","극한직업","스파이더맨"};
         @Override
         public int getCount() {
             return posterID.length;
@@ -70,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog.Builder dlg = new AlertDialog.Builder(MainActivity.this);
                     ImageView ivPoster = dialogView.findViewById(R.id.ivPoster);
                     ivPoster.setImageResource(posterID[i]);
-                    dlg.setTitle("큰 포스터");
+                    dlg.setTitle(posterTitle[i]);
                     dlg.setIcon(R.drawable.ic_launcher);
                     dlg.setView(dialogView);
                     dlg.setNegativeButton("닫기",null);
